@@ -1,6 +1,21 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px; /*i made a mistake here by margin-ing the logo instead of padding the header */
+}
+
+/*made a mistake here by writing too much
+.left-links ul,
+.right-links ul like so */
+
+ul {
+  display: flex;
+  padding: 0; /* i didn't do this */
+  margin: 0; /* and this */
+  gap: 8px;
 }
 
 .logo {
@@ -14,6 +29,8 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  margin: 8px;
+  padding: 0;
 }
 
 a {
