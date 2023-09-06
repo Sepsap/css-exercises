@@ -25,21 +25,30 @@ body {
   gap: 16px;
 }
 
+.text {
+  margin-bottom: 16px
+}
+/* These comments are my previous solutions */
+/*
 .right {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
+} */
 
 .header {
+  display: flex;
   font-size: 18px;
   font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
-
+/*
 .header-cont {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .icon {
   color: royalblue;
@@ -52,6 +61,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
