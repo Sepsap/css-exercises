@@ -2,6 +2,7 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+/*the commented sections are my previous solutions */
 body {
   margin: 0;
   background: #eee;
@@ -11,8 +12,35 @@ body {
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0,0,0,.1); 
+  display: flex;
+  padding: 8px;
+  /* align-items: center; */
+  gap: 16px;
+  justify-content: space-between;
 }
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+/*
+.right {
+  display: flex;
+  margin-left: auto;
+  align-items: center;     
+  gap: 16px;
+}
+*/
 
 .profile-image {
   background: rebeccapurple;
@@ -20,6 +48,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  flex-shrink: 0;
 }
 
 .logo {
